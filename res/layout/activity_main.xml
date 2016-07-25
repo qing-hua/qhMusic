@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.qinghua_music.MainActivity" >
+	<LinearLayout
+	    android:id="@+id/menuBar_layout" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <Button 
+	        android:id="@+id/local_music"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:textSize="10sp"
+	        android:text="本地音乐"/>
+	    <Button 
+	        android:id="@+id/online_music"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:textSize="10sp"
+	        android:text="在线音乐"/>
+	    <Button 
+	        android:id="@+id/download_manage"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:textSize="10sp"
+	        android:text="下载管理"/>
+	    <Button 
+	        android:id="@+id/seting"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:background="@drawable/ic_menu"/>
+	</LinearLayout>
+	
+	<FrameLayout 
+	    android:id="@+id/container_inMainactivity"
+	    android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+	    
+	</FrameLayout>
+	
+	<user_defined.PlayerLayoutView
+	    android:id="@+id/mp3Player_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    
+	</user_defined.PlayerLayoutView>
+</LinearLayout>

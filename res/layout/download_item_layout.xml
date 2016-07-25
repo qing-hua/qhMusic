@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <ImageView 
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_download_icon"/>
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_marginLeft="10dp"
+            android:id="@+id/name_of_dawnload"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="test"/>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ProgressBar 
+                android:id="@+id/progress_of_downloading"
+            	android:layout_height="wrap_content"
+            	android:layout_width="0dp"
+            	style="?android:attr/progressBarStyleHorizontal"
+            	android:layout_weight="1" />
+            <TextView 
+                android:id="@+id/value_of_progress"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textSize="10sp"
+                android:text="等待中"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
